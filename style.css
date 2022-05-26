@@ -1,8 +1,8 @@
 :root {
     --textColor: #312F2F;
     --otherTextColor: #444242;
-    --backgroundColor: #F5FBEF;
-    --otherBackgroundColor: #DFE4D9;
+    --backgroundColor: #F5F5F5;
+    --otherBackgroundColor: #EFE4E9;
     --highlight: #FF5666;
 }
 :root.darkTheme {
@@ -50,7 +50,7 @@ body {
     margin: 0;
     color: black;
     font-family: 'Indie Flower', cursive;
-    font-size: 48px;
+    font-size: 3em;
     overflow: hidden;
 }
 .logoCredit {
@@ -64,5 +64,25 @@ body {
 /* side Form CSS */
 .sideForm {
     background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
     flex: 1;
+}
+.formContainer{
+    background-color: var(--otherBackgroundColor);
+}
+h1, h2{
+    color: var(--textColor);
+    padding-left: 2vw;
+    padding-top: 2vh;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+}
+h3 {
+    color: var(--otherTextColor);
+    padding-left: 2vw;
+    padding-top: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
 }
