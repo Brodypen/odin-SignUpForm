@@ -12,6 +12,7 @@
     --OtherBackgroundColor: #444242;
     --highlight: #FF5666;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -20,6 +21,7 @@ body {
     display: flex;
     height: 100vh;
 }
+/* side hero CSS */
 .sideHero {
     background-image: url(/pics/sidePic.jpg);
     background-size: cover;
@@ -27,4 +29,34 @@ body {
     background-repeat: no-repeat;
     width: 35vw;
     display: flex;
+    flex-direction: column;
+}
+.logoContainer {
+    height: auto;
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoImg {
+    height: 20vh;
+    overflow: hidden;
+}
+.logoTitle {
+    padding: 0;
+    margin: 0;
+    color: var(--textColor);
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+    overflow: hidden;
+}
+.logoCredit {
+    position: relative;
+    top: 75vh;
+    text-align: right;
+    padding-right: 1vw;
+    color: white;
+    font-family: 'Indie Flower', cursive;
 }
