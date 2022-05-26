@@ -7,24 +7,47 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Sign up Form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="mainContainer">
       <div class="sideHero">
-          <div class="logoContainer">
-              <img class="logoImg" src="/pics/hotDogNoBGv2.png" alt="Hotdog logo">
-              <h1 class="logoTitle">Hot Diggity!</h1>
-          </div>
+        <div class="logoContainer">
+          <img class="logoImg" src="/pics/hotDogNoBGv2.png" alt="Hotdog logo" />
+          <h1 class="logoTitle">Hot Diggity!</h1>
+        </div>
         <p class="logoCredit">Photo by Josh Pereira on Unsplash</p>
       </div>
       <div class="sideForm">
         <h1>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, sint?
         </h1>
-        <div class="formContainer"></div>
+        <div class="formContainer">
+          <form action="" method="get">
+            <div class="nameWrapper">
+              <label for="firstName" class="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" />
+              <label for="lastName" class="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" />
+            </div>
+            <label for="email" class="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <label for="phoneNumber" class="phoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-456-7890"/>
+            <label for="password" class="password">Password</label>
+            <input name="password" class="password">
+          </form>
+        </div>
         <input type="submit" value="Create Account" />
         <p>Already have an account? <b>Log in</b></p>
       </div>

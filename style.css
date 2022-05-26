@@ -1,21 +1,22 @@
 :root {
     --textColor: #312F2F;
-    --OtherTextColor: #444242;
+    --otherTextColor: #444242;
     --backgroundColor: #F5FBEF;
-    --OtherBackgroundColor: #DFE4D9;
+    --otherBackgroundColor: #DFE4D9;
     --highlight: #FF5666;
 }
 :root.darkTheme {
     --textColor: #F5FBEF;
-    --OtherTextColor: #DFE4D9;
+    --otherTextColor: #DFE4D9;
     --backgroundColor: #312F2F;
-    --OtherBackgroundColor: #444242;
+    --otherBackgroundColor: #444242;
     --highlight: #FF5666;
 }
 
 body {
     padding: 0;
     margin: 0;
+    background-color: red;
 }
 .mainContainer {
     display: flex;
@@ -47,7 +48,7 @@ body {
 .logoTitle {
     padding: 0;
     margin: 0;
-    color: var(--textColor);
+    color: black;
     font-family: 'Indie Flower', cursive;
     font-size: 48px;
     overflow: hidden;
@@ -59,4 +60,9 @@ body {
     padding-right: 1vw;
     color: white;
     font-family: 'Indie Flower', cursive;
+}
+/* side Form CSS */
+.sideForm {
+    background-color: var(--backgroundColor);
+    flex: 1;
 }
